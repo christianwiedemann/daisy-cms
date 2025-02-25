@@ -1,0 +1,33 @@
+#!/bin/bash
+
+## Description: Init Environment
+## Usage: init
+## Example: "ddev init"
+
+ddev start
+
+# Run composer install
+ddev composer install
+
+ddev exec --dir /var/www/html/docroot/themes/custom/my_daisy "yarn install; yarn build:drupal"
+
+ddev drush updb
+# Import database
+ddev import-db --file init-dumps/dump.sql
+
+
+ddev drush updb
+
+ddev drush cim
+
+# Clear Cache
+ddev drush cr
+
+# Run config imports
+
+
+FULLURL=${DDEV_PRIMARY_URL}
+
+printf "Welcome on Wingsuit! \n\n"
+printf "Open $FULLURL \nLogin under ${FULLURL}/user/login\n"
+printf "Login with: admin/admin\n\n"

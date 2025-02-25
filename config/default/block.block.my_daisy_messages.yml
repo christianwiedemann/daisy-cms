@@ -1,0 +1,22 @@
+uuid: 0d5cc722-c180-458a-9913-6d39c0d0bc5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_daisy
+_core:
+  default_config_hash: _-y7_Jxy8xwoAbjuSAfpSBQKP-OQr-hGJyGDlPikU2A
+id: my_daisy_messages
+theme: my_daisy
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

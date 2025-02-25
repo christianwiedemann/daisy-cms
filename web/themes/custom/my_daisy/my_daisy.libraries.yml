@@ -1,0 +1,4 @@
+core:
+  css:
+    theme:
+      dist/app-drupal/tokens.css : { minified: true }

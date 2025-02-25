@@ -1,0 +1,20 @@
+uuid: 1bd89b01-ea85-45d0-99d7-a6790503bbb9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_daisy
+_core:
+  default_config_hash: Bt0x-Edhy3GKG-ByrKL9Ykb1pYQhC36iCsN2JZIC3hY
+id: my_daisy_page_title
+theme: my_daisy
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

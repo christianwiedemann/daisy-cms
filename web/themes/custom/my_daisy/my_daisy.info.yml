@@ -1,0 +1,29 @@
+name: My daisy UI
+description: "DaisyUI adds component class names to Tailwind CSS so you can make beautiful websites faster than ever."
+type: theme
+base theme: ui_suite_daisyui
+core_version_requirement: ^10.3 || ^11
+logo: logo.png
+regions:
+  navbar_start: Navbar start
+  navbar_center: Navbar center
+  navbar_end: Navbar end
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+
+libraries:
+  - my_daisy/core
+
+libraries-override:
+  ui_suite_daisyui/daisyui_cdn:
+    css:
+      theme:
+        https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css: false
+    js:
+      https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4: false
+  ui_suite_daisyui/daisyui_themes_cdn:
+    css:
+      theme:
+        https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/themes.css: false
+

@@ -9,7 +9,7 @@ ddev start
 # Run composer install
 ddev composer install
 
-ddev exec --dir /var/www/html/docroot/themes/custom/my_daisy "yarn install; yarn build:drupal"
+ddev exec --dir /var/www/html/web/themes/custom/my_daisy "yarn install; yarn build:drupal"
 
 ddev drush updb
 # Import database

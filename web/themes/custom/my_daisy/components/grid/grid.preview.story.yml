@@ -1,0 +1,22 @@
+name: Preview
+variants:
+  - column_2
+slots:
+  cells:
+    - type: component
+      component: "my_daisy:card"
+      story: preview
+      variant: "default"
+    - type: component
+      component: "my_daisy:card"
+      story: preview
+      variant: "default"
+    - type: component
+      component: "my_daisy:card"
+      story: preview
+      variant: "default"
+    - type: component
+      component: "my_daisy:card"
+      story: preview
+      variant: "default"
+

@@ -17,6 +17,8 @@
     },
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.6.0",
+        "drupal/coder": "^8.3",
         "drupal/core-composer-scaffold": "^11.1.1",
         "drupal/core-project-message": "^11.1.1",
         "drupal/core-recommended": "^11.1.1",
@@ -26,19 +28,28 @@
         "drupal/drupal_cms_forms": "~1.0.0",
         "drupal/drupal_cms_seo_tools": "~1.0.2",
         "drupal/drupal_cms_starter": "~1.0.2",
+        "drupal/gin_lb": "2.0.x-dev",
+        "drupal/layout_builder_browser": "^1.8",
+        "drupal/layout_builder_restrictions": "^3",
         "drupal/project_browser": "@alpha",
+        "drupal/section_library": "^2.0",
+        "drupal/ui_patterns_settings": "3.0.x-dev",
         "drupal/ui_suite_daisyui": "^5",
         "drupal/webform": "@beta",
+        "drupal/wingsuit_companion": "3.0.x-dev",
         "drush/drush": "^13"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
+
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "php-http/discovery": true
@@ -52,6 +63,18 @@
                 "web-root": "web/"
             }
         },
+        "patches": {
+            "drupal/core": {
+                "Callers of LayoutEntityHelperTrait::getEntitySections() do not account for the view mode": "https://www.drupal.org/files/issues/2022-12-15/3008924-42.patch",
+                "Not all form elements can't use in vertical_tabs": "https://www.drupal.org/files/issues/2022-03-14/2190333-20.patch",
+                "New non translatable field on translatable content throws error": "https://www.drupal.org/files/issues/2022-09-30/3025039-MR1105-79.patch",
+                "Layout builder doesn't support bundle computed field": "https://www.drupal.org/files/issues/2024-07-02/layoutbuilder-bundlecomputedfieldsfix-3034979-21-11.x.patch"
+            },
+            "drupal/ui_patterns": {
+                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/230.diff"
+            }
+        },
+        "enable-patching": true,
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],

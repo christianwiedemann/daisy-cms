@@ -4,19 +4,19 @@ variants:
 slots:
   cells:
     - type: component
-      component: "my_daisy:card"
+      component: "ui_suite_daisyui:card"
       story: preview
       variant: "default"
     - type: component
-      component: "my_daisy:card"
+      component: "ui_suite_daisyui:card"
       story: preview
       variant: "default"
     - type: component
-      component: "my_daisy:card"
+      component: "ui_suite_daisyui:card"
       story: preview
       variant: "default"
     - type: component
-      component: "my_daisy:card"
+      component: "ui_suite_daisyui:card"
       story: preview
       variant: "default"
 

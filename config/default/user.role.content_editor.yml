@@ -16,7 +16,6 @@ dependencies:
     - file
     - filter
     - media
-    - navigation
     - node
     - path
     - redirect
@@ -34,7 +33,6 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access media overview'
-  - 'access navigation'
   - 'access toolbar'
   - 'administer menu'
   - 'administer redirects'

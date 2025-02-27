@@ -2,11 +2,11 @@ name: Preview
 slots:
   column_1:
     - type: component
-      component: "my_daisy:card"
+      component: "ui_suite_daisyui:card"
       story: preview
       variant: "default"
   column_2:
     - type: component
-      component: "my_daisy:card"
+      component: "ui_suite_daisyui:card"
       story: preview
       variant: "default"

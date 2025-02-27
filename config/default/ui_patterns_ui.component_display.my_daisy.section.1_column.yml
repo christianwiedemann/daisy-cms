@@ -1,0 +1,28 @@
+uuid: 50c66cbb-21b5-4b0f-b16e-a0e81227382e
+langcode: en
+status: 1
+dependencies: {  }
+id: my_daisy.section.1_column
+label: '1 Column'
+sdc_component_id: 'my_daisy:section'
+form_mode_name: 1_column
+content:
+  display_header_region:
+    source_id: checkbox
+    weight: '0'
+    region: content
+    parent: ''
+    settings: {  }
+    third_party_settings: {  }
+    widget_settings:
+      title: ''
+      required: 0
+hidden:
+  attributes: true
+  variant: true
+  header: true
+  column_1: true
+  column_2: true
+  column_3: true
+  column_4: true
+  column_5: true

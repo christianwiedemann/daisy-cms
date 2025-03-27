@@ -1,0 +1,95 @@
+uuid: 625f272f-b29f-4170-9e3d-5547832a3db9
+langcode: en
+status: 1
+dependencies: {  }
+id: my_daisy.section.column_2
+label: 'Column 2'
+component_id: 'my_daisy:section'
+form_mode_name: column_2
+content:
+  theme:
+    source_id: select
+    parent: ''
+    weight: '0'
+    region: content
+    third_party_settings: {  }
+    settings: {  }
+  grid_layout:
+    widget_settings:
+      title: ''
+      required: 0
+      widget: select
+      css:
+        wrapper_classes: ''
+      overwrite:
+        1_equal:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+        2_equal:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+        2_66x33:
+          enable: '1'
+          title: ''
+          icon: null
+          css: ''
+        2_33x66:
+          enable: '1'
+          title: ''
+          icon: null
+          css: ''
+        2_75x25:
+          enable: '1'
+          title: ''
+          icon: null
+          css: ''
+        2_25x75:
+          enable: '1'
+          title: ''
+          icon: null
+          css: ''
+        3_equal:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+        3_25x50x25:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+        2_25x25x50:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+        4_equal:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+        5_equal:
+          title: ''
+          icon: null
+          css: ''
+          enable: 0
+    source_id: enum_widget
+    parent: ''
+    weight: '1'
+    region: content
+    third_party_settings: {  }
+    settings: {  }
+hidden:
+  attributes: true
+  display_header_region: true
+  gutter: true
+  header: true
+  column_1: true
+  column_2: true
+  column_3: true
+  column_4: true
+  column_5: true

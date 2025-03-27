@@ -1,0 +1,42 @@
+uuid: 408bb3ea-7391-4055-985e-88e1488f8279
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landingpage.layout_builder__layout
+    - node.type.landingpage
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_builder_blank
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - 'ui_patterns:my_daisy:section'
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories: {  }
+id: node.landingpage.default
+targetEntityType: node
+bundle: landingpage
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

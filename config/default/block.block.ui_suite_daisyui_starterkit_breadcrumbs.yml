@@ -1,0 +1,22 @@
+uuid: 70d59b2c-c329-4592-921d-2618544adec4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ui_suite_daisyui_starterkit
+_core:
+  default_config_hash: HJR2eoibMpAadimi80YzzOUj7E6xnIEvsFMAKxGTNIU
+id: ui_suite_daisyui_starterkit_breadcrumbs
+theme: ui_suite_daisyui_starterkit
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

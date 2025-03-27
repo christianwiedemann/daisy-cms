@@ -73,7 +73,7 @@
                 "Layout builder doesn't support bundle computed field": "https://www.drupal.org/files/issues/2024-07-02/layoutbuilder-bundlecomputedfieldsfix-3034979-21-11.x.patch"
             },
             "drupal/ui_patterns": {
-                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/230.diff?xx"
+                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/230.diff?xxx"
             },
             "drupal/ui_patterns_settings": {
                 "Field groups": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/35.diff",

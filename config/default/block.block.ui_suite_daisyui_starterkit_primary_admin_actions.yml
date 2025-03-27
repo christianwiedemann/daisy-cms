@@ -1,0 +1,20 @@
+uuid: c2026c8f-72bc-456d-b1aa-00998222618f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ui_suite_daisyui_starterkit
+_core:
+  default_config_hash: Ln-3_6Dne--_kQHNbvmwexYo3vXlpVy0lRLTZbPCkSI
+id: ui_suite_daisyui_starterkit_primary_admin_actions
+theme: ui_suite_daisyui_starterkit
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

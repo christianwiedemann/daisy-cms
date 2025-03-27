@@ -1,0 +1,24 @@
+uuid: ade1674c-ac61-47ba-bce5-06073bce9d7c
+langcode: en
+status: 1
+dependencies: {  }
+id: ui_suite_daisyui.table.demo
+label: Demo
+component_id: 'ui_suite_daisyui:table'
+form_mode_name: demo
+content:
+  attributes:
+    source_id: attributes
+    parent: ''
+    weight: '0'
+    region: content
+    third_party_settings: {  }
+    settings: {  }
+hidden:
+  zebra: true
+  pinned_rows: true
+  pinned_cols: true
+  variant: true
+  header: true
+  body: true
+  footer: true

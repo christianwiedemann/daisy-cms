@@ -52,6 +52,7 @@ module:
   klaro: 0
   layout_builder: 0
   layout_builder_browser: 0
+  layout_builder_restrictions: 0
   layout_discovery: 0
   link: 0
   linkit: 0
@@ -93,9 +94,11 @@ module:
   ui_patterns_library: 0
   ui_patterns_settings: 0
   ui_patterns_ui: 0
+  ui_patterns_ui_fieldgroups: 0
   ui_skins: 0
   ui_styles: 0
   ui_styles_block: 0
+  ui_styles_ui_patterns: 0
   update: 0
   user: 0
   views_ui: 0
@@ -112,3 +115,4 @@ theme:
   drupal_cms_olivero: 0
   ui_suite_daisyui: 0
   my_daisy: 0
+  ui_suite_daisyui_starterkit: 0

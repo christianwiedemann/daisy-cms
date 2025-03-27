@@ -1,0 +1,22 @@
+uuid: 81768254-103a-493e-8c3d-6b014fb343f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ui_suite_daisyui_starterkit
+_core:
+  default_config_hash: I1kHREbrEQPoWI4AtycBvWeo0EpK1u3MhreVa9BYyuQ
+id: ui_suite_daisyui_starterkit_content
+theme: ui_suite_daisyui_starterkit
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

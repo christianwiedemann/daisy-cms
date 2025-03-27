@@ -1,0 +1,70 @@
+uuid: 6575f19b-fc61-42f7-8816-32e07e80a1c5
+langcode: en
+status: 1
+dependencies:
+  module:
+    - ui_patterns_ui_fieldgroups
+third_party_settings:
+  ui_patterns_ui_fieldgroups:
+    group_background:
+      children: {  }
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: hidden
+      format_settings:
+        show_empty_fields: 0
+        label_as_html: 0
+        id: ''
+        classes: ''
+        description: ''
+        open: 0
+        required_fields: 1
+      label: Background
+id: my_daisy.section.column_1
+label: 'Column 1'
+component_id: 'my_daisy:section'
+form_mode_name: column_1
+content:
+  theme:
+    widget_settings:
+      title: 'My Theme'
+      required: 1
+      widget: colors
+      css:
+        wrapper_classes: ''
+      overwrite:
+        bg-primary:
+          enable: '1'
+          title: Primary
+          icon: null
+          css: bg-primary
+        bg-secondary:
+          enable: '1'
+          title: Secondary
+          icon: null
+          css: bg-secondary
+    source_id: enum_widget
+    parent: group_background
+    weight: '1'
+    region: content
+    third_party_settings: {  }
+    settings: {  }
+  group_background:
+    source_id: null
+    parent: ''
+    weight: '0'
+    region: content
+    third_party_settings: {  }
+    settings: {  }
+hidden:
+  attributes: true
+  display_header_region: true
+  gutter: true
+  grid_layout: true
+  header: true
+  column_1: true
+  column_2: true
+  column_3: true
+  column_4: true
+  column_5: true

@@ -1,0 +1,20 @@
+uuid: 8c5fd202-02cf-41de-9cb7-4e454ba2680d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ui_suite_daisyui_starterkit
+_core:
+  default_config_hash: tZ0ZN9PyK3hAJ-mIUQZl9NrvT7OZXTS3MQjgE_bF1i8
+id: ui_suite_daisyui_starterkit_page_title
+theme: ui_suite_daisyui_starterkit
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

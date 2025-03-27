@@ -1,0 +1,12 @@
+name: Prose
+description: "Prose component"
+group: "Data display"
+variants:
+  default:
+    title: Default
+  large:
+    title: Large
+slots:
+  text:
+    title: Text
+    description: "Text"

@@ -1,0 +1,12 @@
+{% set variant = variant|default('default')%}
+{%
+  set classes = [
+    'prose',
+    variant == 'default' ? 'prose-default',
+    variant == 'large' ? 'prose-large',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ content }}
+</div>

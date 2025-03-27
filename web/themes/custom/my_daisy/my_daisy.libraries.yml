@@ -1,6 +1,4 @@
 core:
   css:
     theme:
-      dist/app-drupal/tokens.css : { minified: true }
-  dependencies:
-    - core/once
+      dist/css/app.css: { minified: true }

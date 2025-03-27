@@ -1,0 +1,26 @@
+name: cta
+description: "CTA Sections"
+group: CTA Section
+slots:
+  title:
+    title: "Title"
+    description: "Title of the section."
+  text:
+    title: "Text"
+    description: "Text of the section."
+  actions:
+    title: "Actions"
+    description: "Actions region."
+props:
+  type: object
+  properties:
+    alignment:
+      title: Alignment
+      description: "Alignment."
+      type: string
+      enum:
+        - left
+        - center
+      "meta:enum":
+        let: "Left"
+        center: "Center"

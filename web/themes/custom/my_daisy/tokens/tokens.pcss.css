@@ -1,8 +1,0 @@
-@import "tailwindcss" source(none);
-@source "../components";
-@source "../../../contrib/ui_suite_daisyui/components";
-@plugin "daisyui" {
-  include: button, input, select, card;
-}
-@plugin "tailwind-hamburgers";
-

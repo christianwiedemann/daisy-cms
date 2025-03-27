@@ -1,0 +1,14 @@
+/*
+ * Prose configuration.
+ */
+@reference '../../css/app.pcss';
+
+@layer components {
+  .prose-default {
+    @apply prose-base;
+  }
+
+  .prose-large {
+    @apply prose-base lg:prose-xl;
+  }
+}

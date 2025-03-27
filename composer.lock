@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6d8b6de829f1b22266705cd1d83fc7f0",
+    "content-hash": "c15f718d08c84587d169065a65f8d2da",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4064,17 +4064,11 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "3.6.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-3.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.6.zip",
-                "reference": "8.x-3.6",
-                "shasum": "427c0a65dc1936e69e60c120776056cfe5b43e86"
+                "reference": "0d8972d0a9902769915928c386f4b73c90b8008e"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10 || ^11"
@@ -4084,12 +4078,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-3.6",
-                    "datestamp": "1722672510",
+                    "version": "8.x-3.6+3-dev",
+                    "datestamp": "1739379201",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -6798,17 +6795,11 @@
         },
         {
             "name": "drupal/ui_patterns",
-            "version": "2.0.0",
+            "version": "dev-2.0.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ui_patterns.git",
-                "reference": "2.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ui_patterns-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "3c4e3c63e812b060f2908a8410356d51d1856b40"
+                "reference": "c5fe26eb01609c27b56c5b42265aeefd6eac107a"
             },
             "require": {
                 "drupal/core": "^10.3.4 || ^11",
@@ -6819,12 +6810,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.0.x": "2.0.x-dev"
+                },
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1738872245",
+                    "version": "2.0.2+3-dev",
+                    "datestamp": "1742316501",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -14262,8 +14256,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/field_group": 20,
         "drupal/gin_lb": 20,
         "drupal/project_browser": 15,
+        "drupal/ui_patterns": 20,
         "drupal/ui_patterns_settings": 20,
         "drupal/webform": 10,
         "drupal/wingsuit_companion": 20

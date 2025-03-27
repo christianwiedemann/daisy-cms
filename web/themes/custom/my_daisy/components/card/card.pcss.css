@@ -1,0 +1,7 @@
+@reference '../../css/app.pcss';
+
+@layer utilities {
+  .card-title {
+    @apply text-4xl;
+  }
+}

@@ -13,3 +13,5 @@ If you want to use [DDEV](https://ddev.com) to run Drupal CMS locally, follow th
 ddev init
 ```
 
+## Generate theme
+ddev php ./web/core/scripts/drupal generate-theme --path themes/custom my_daisy --starterkit ui_suite_daisyui_starterkit

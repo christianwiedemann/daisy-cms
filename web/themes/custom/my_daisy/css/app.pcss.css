@@ -1,0 +1,31 @@
+/* stylelint-disable */
+@import "tailwindcss" source(none);
+@plugin "@tailwindcss/typography";
+@import "./base/base.pcss" layer(base);
+@import "./utilities/utilities.pcss" layer(utilities);
+@import "./themes/themes.pcss" layer(themes);
+
+/**
+ * Declare layers.
+ */
+@layer theme, base, components, utilities;
+
+
+/**
+ * Declare all source files to take into account all utility classes used in the theme for the build process.
+ */
+@source "../templates/*.{twig,js}";
+@source "../templates/**/*.{twig,js}";
+@source "../components/**/*.{twig,js,yml}";
+@source "../*.ui_styles.yml";
+@source "../ui_examples/*.yml";
+@source "./safelist.txt";
+
+/**
+ * Import DaisyUI excluding DaisyUI reset.css as Tailwind already provide same mechanism (Preflight).
+ * We exclude DaisyUI reset.css as it prevents style from base layer to be applied.
+ */
+@plugin "daisyui" {
+  exclude: reset;
+  logs: false;
+}

@@ -28,11 +28,13 @@
         "drupal/drupal_cms_forms": "~1.0.0",
         "drupal/drupal_cms_seo_tools": "~1.0.2",
         "drupal/drupal_cms_starter": "~1.0.2",
+        "drupal/field_group": "3.x-dev",
         "drupal/gin_lb": "2.0.x-dev",
         "drupal/layout_builder_browser": "^1.8",
         "drupal/layout_builder_restrictions": "^3",
         "drupal/project_browser": "@alpha",
         "drupal/section_library": "^2.0",
+        "drupal/ui_patterns": "2.0.x-dev",
         "drupal/ui_patterns_settings": "3.0.x-dev",
         "drupal/ui_suite_daisyui": "^5",
         "drupal/webform": "@beta",
@@ -71,7 +73,11 @@
                 "Layout builder doesn't support bundle computed field": "https://www.drupal.org/files/issues/2024-07-02/layoutbuilder-bundlecomputedfieldsfix-3034979-21-11.x.patch"
             },
             "drupal/ui_patterns": {
-                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/230.diff"
+                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/230.diff?xx"
+            },
+            "drupal/ui_patterns_settings": {
+                "Field groups": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/35.diff",
+                "Widget": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/38.diff"
             }
         },
         "enable-patching": true,

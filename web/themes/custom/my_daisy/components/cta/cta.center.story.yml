@@ -1,0 +1,13 @@
+name: Center
+slots:
+  title: "Boost your productivity. Start using our UI Suite today."
+  text: "Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea."
+  actions:
+    type: component
+    component: "ui_suite_daisyui:button"
+    slots:
+      label: "Buy Now"
+    props:
+      variant: primary
+props:
+  alignment: center

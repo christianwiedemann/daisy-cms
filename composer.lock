@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98ee0fe09302f4f575a4eb412433f111",
+    "content-hash": "78d6fe9266ea8b592324ef185252bcbf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2766,6 +2766,35 @@
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
             }
+        },
+        {
+            "name": "drupal/daisy_cms_layout_builder",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/daisy_cms_layout_builder.git",
+                "reference": "9fbdd99e42353f2f5012692bae6f302fd84f94e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdaisy_cms_layout_builder/repository/archive.zip?sha=9fbdd99e42353f2f5012692bae6f302fd84f94e2",
+                "reference": "9fbdd99e42353f2f5012692bae6f302fd84f94e2",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/token": "^1"
+            },
+            "default-branch": true,
+            "type": "drupal-recipe",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Applies the foundational Daisy UI CMS recipes.",
+            "support": {
+                "source": "https://git.drupalcode.org/project/daisy_cms_layout_builder/-/tree/1.0.x"
+            },
+            "time": "2025-03-28T10:01:40+00:00"
         },
         {
             "name": "drupal/daisy_cms_starter",
@@ -14390,6 +14419,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/daisy_cms_layout_builder": 20,
         "drupal/daisy_cms_starter": 20,
         "drupal/field_group": 20,
         "drupal/gin_lb": 20,

@@ -1,0 +1,37 @@
+name: DaisyUI CMS installer
+type: profile
+
+# Change this to whatever your minimum required version of core is, depending on the
+# needs of the recipes you want to apply.
+core_version_requirement: '^11.1'
+
+# Change this to whatever you like. It's only visible to users in the installer's profile
+# selection step, which is skipped if you mark this profile as a distribution.
+description: 'Provides install-time tweaks. Not to be used in production.'
+
+# Remove this entire `distribution` section if you'd like users to choose which profile
+# to use at the start of the install.
+distribution:
+  name: DaisyUI CMS installer
+  install:
+    theme: claro
+    finish_url: '/'
+
+# A list of forms that should be presented to the user before choosing database
+# settings and installing the system. Each of these forms must implement
+# \Drupal\RecipeKit\Installer\FormInterface.
+forms:
+  - '\Drupal\RecipeKit\Installer\Form\RecipesForm'
+  - '\Drupal\RecipeKit\Installer\Form\SiteNameForm'
+
+
+recipes:
+  required:
+    - drupal/daisy_cms_starter
+  optional:
+    'Layout':
+      - drupal/daisy_cms_layout_builder
+    'AI':
+     - drupal/drupal_cms_ai
+    'Seo Tools':
+      - drupal_cms_seo_tools

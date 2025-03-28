@@ -8,7 +8,6 @@ sqllite/*
 # Ignore drupal core.
 recipes
 web/core
-web/profiles
 # Ignore paths that contain user-generated content.
 web/sites/*/files
 

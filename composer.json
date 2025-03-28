@@ -1,6 +1,6 @@
 {
     "name": "drupal/daisy-cms",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Drupal Daisy CMS is a ready-to-use platform built on Drupal core, offering smart defaults to get started quickly and enterprise-grade tools for marketers, designers, and content creators.",
     "type": "project",
     "license": "GPL-2.0-or-later",
@@ -22,17 +22,19 @@
         "drupal/core-composer-scaffold": "^11.1.1",
         "drupal/core-project-message": "^11.1.1",
         "drupal/core-recommended": "^11.1.1",
-        "drupal/drupal_cms_accessibility_tools": "~1.0.0",
-        "drupal/drupal_cms_ai": "~1.0.2",
-        "drupal/drupal_cms_analytics": "~1.0.0",
-        "drupal/drupal_cms_forms": "~1.0.0",
-        "drupal/drupal_cms_seo_tools": "~1.0.2",
-        "drupal/drupal_cms_starter": "~1.0.2",
+        "drupal/daisy_cms_starter": "1.0.x-dev",
+        "drupal/drupal_cms_accessibility_tools": "~1.1.0",
+        "drupal/drupal_cms_ai": "~1.1",
+        "drupal/drupal_cms_analytics": "~1.1.0",
+        "drupal/drupal_cms_forms": "~1.1.0",
+        "drupal/drupal_cms_seo_tools": "~1.1.0",
+        "drupal/drupal_cms_starter": "~1.1.0",
         "drupal/field_group": "3.x-dev",
         "drupal/gin_lb": "2.0.x-dev",
         "drupal/layout_builder_browser": "^1.8",
         "drupal/layout_builder_restrictions": "^3",
         "drupal/project_browser": "@alpha",
+        "drupal/recipe_installer_kit": "^1-alpha3@alpha",
         "drupal/section_library": "^2.0",
         "drupal/ui_patterns": "2.0.x-dev",
         "drupal/ui_patterns_settings": "3.0.x-dev",
@@ -73,7 +75,7 @@
                 "Layout builder doesn't support bundle computed field": "https://www.drupal.org/files/issues/2024-07-02/layoutbuilder-bundlecomputedfieldsfix-3034979-21-11.x.patch"
             },
             "drupal/ui_patterns": {
-                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/230.diff?xxx"
+                "Draft for ui": "https://git.drupalcode.org/project/ui_patterns/-/merge_requests/359.diff?xxx"
             },
             "drupal/ui_patterns_settings": {
                 "Field groups": "https://git.drupalcode.org/project/ui_patterns_settings/-/merge_requests/35.diff",

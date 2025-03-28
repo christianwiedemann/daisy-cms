@@ -9,12 +9,32 @@
         "docs": "https://drupal.org/docs/user_guide/en/index.html",
         "chat": "https://drupal.org/node/314178"
     },
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/daisy_cms_starter"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/daisy_cms_content_type_base"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/daisy_cms_image"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/daisy_cms_remote_video"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/daisy_cms_layout_builder"
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    },
+    ],
     "require": {
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.6.0",
@@ -22,14 +42,13 @@
         "drupal/core-composer-scaffold": "^11.1.1",
         "drupal/core-project-message": "^11.1.1",
         "drupal/core-recommended": "^11.1.1",
-        "drupal/daisy_cms_layout_builder": "1.0.x-dev",
         "drupal/daisy_cms_starter": "1.0.x-dev",
+        "drupal/daisy_cms_content_type_base": "1.0.x-dev",
+        "drupal/daisy_cms_layout_builder": "1.0.x-dev",
+        "drupal/daisy_cms_image": "1.0.x-dev",
+        "drupal/daisy_cms_remote_video": "1.0.x-dev",
         "drupal/drupal_cms_accessibility_tools": "~1.1.0",
         "drupal/drupal_cms_ai": "~1.1",
-        "drupal/drupal_cms_analytics": "~1.1.0",
-        "drupal/drupal_cms_forms": "~1.1.0",
-        "drupal/drupal_cms_seo_tools": "~1.1.0",
-        "drupal/drupal_cms_starter": "~1.1.0",
         "drupal/field_group": "3.x-dev",
         "drupal/gin_lb": "2.0.x-dev",
         "drupal/layout_builder_browser": "^1.8",

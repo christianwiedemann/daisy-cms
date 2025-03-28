@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78d6fe9266ea8b592324ef185252bcbf",
+    "content-hash": "2230f44930f7a2919932d4a61773bacb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2085,70 +2085,6 @@
             }
         },
         {
-            "name": "drupal/checklistapi",
-            "version": "2.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "2.1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.6.zip",
-                "reference": "2.1.6",
-                "shasum": "64f439b7dd09336c4b32480edf1796cbc911d9b4"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10 || ^11",
-                "php": ">=7.3.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.1.6",
-                    "datestamp": "1713801912",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Travis Carden",
-                    "homepage": "https://www.drupal.org/user/3550392",
-                    "email": "travis.carden@gmail.com"
-                },
-                {
-                    "name": "rajeshreeputra",
-                    "homepage": "https://www.drupal.org/user/3418561"
-                },
-                {
-                    "name": "traviscarden",
-                    "homepage": "https://www.drupal.org/user/236758"
-                },
-                {
-                    "name": "vladimiraus",
-                    "homepage": "https://www.drupal.org/user/673120"
-                }
-            ],
-            "description": "Provides an API for creating fillable, persistent checklists.",
-            "homepage": "http://drupal.org/project/checklistapi",
-            "support": {
-                "source": "https://git.drupalcode.org/project/checklistapi",
-                "issues": "https://www.drupal.org/project/issues/checklistapi"
-            }
-        },
-        {
             "name": "drupal/coder",
             "version": "8.3.28",
             "source": {
@@ -2768,47 +2704,103 @@
             }
         },
         {
+            "name": "drupal/daisy_cms_content_type_base",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/daisy_cms_content_type_base",
+                "reference": "f5b0955eb7abdba528c8864165a3d5d4a88928a2"
+            },
+            "require": {
+                "drupal/autosave_form": "^1.10",
+                "drupal/bpmn_io": "^2.0.6",
+                "drupal/core": ">=10.4",
+                "drupal/daisy_cms_image": "1.0.x-dev",
+                "drupal/eca": "^2.1.4",
+                "drupal/linkit": "^7",
+                "drupal/pathauto": "^1.13",
+                "drupal/scheduler": "^2.2",
+                "drupal/scheduler_content_moderation_integration": "^3.0.4",
+                "drupal/tagify": "^1.2",
+                "drupal/token": "^1",
+                "drupal/trash": "^3.0.13"
+            },
+            "default-branch": true,
+            "type": "drupal-recipe",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Provides basic tools for creating content.",
+            "time": "2025-03-28T12:10:53+00:00"
+        },
+        {
+            "name": "drupal/daisy_cms_image",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/daisy_cms_image",
+                "reference": "e6c9a0204676180712c4507575fd735236c85e93"
+            },
+            "require": {
+                "drupal/core": ">=10.4",
+                "drupal/easy_responsive_images": "^1.4",
+                "drupal/focal_point": "^2",
+                "drupal/svg_image": "^3.1"
+            },
+            "default-branch": true,
+            "type": "drupal-recipe",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Sets up base image configuration including easy responsive image, view modes, focal point-based cropping and SVG images.",
+            "time": "2025-03-28T09:29:14+00:00"
+        },
+        {
             "name": "drupal/daisy_cms_layout_builder",
             "version": "1.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/daisy_cms_layout_builder.git",
-                "reference": "9fbdd99e42353f2f5012692bae6f302fd84f94e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdaisy_cms_layout_builder/repository/archive.zip?sha=9fbdd99e42353f2f5012692bae6f302fd84f94e2",
-                "reference": "9fbdd99e42353f2f5012692bae6f302fd84f94e2",
-                "shasum": ""
+                "url": "https://git.drupalcode.org/project/daisy_cms_layout_builder",
+                "reference": "8850e7a095a93b681f2f3df7f71f2b9346f1923e"
             },
             "require": {
                 "drupal/token": "^1"
             },
             "default-branch": true,
             "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Applies the foundational Daisy UI CMS recipes.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/daisy_cms_layout_builder/-/tree/1.0.x"
+            "time": "2025-03-28T11:28:31+00:00"
+        },
+        {
+            "name": "drupal/daisy_cms_remote_video",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/daisy_cms_remote_video",
+                "reference": "c003922fd3ab237f7182be9da539a664b2a5bb48"
             },
-            "time": "2025-03-28T10:01:40+00:00"
+            "require": {
+                "drupal/core": ">=10.4",
+                "drupal/drupal_cms_privacy_basic": "~1.1.0"
+            },
+            "default-branch": true,
+            "type": "drupal-recipe",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Configures display options for remote video.",
+            "time": "2025-03-28T12:18:44+00:00"
         },
         {
             "name": "drupal/daisy_cms_starter",
             "version": "1.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/daisy_cms_starter.git",
-                "reference": "780a9b53408416182df752e2ac1c564d5e59f4f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdaisy_cms_starter/repository/archive.zip?sha=780a9b53408416182df752e2ac1c564d5e59f4f4",
-                "reference": "780a9b53408416182df752e2ac1c564d5e59f4f4",
-                "shasum": ""
+                "url": "https://git.drupalcode.org/project/daisy_cms_starter",
+                "reference": "6e8a2010ab5f6191c0b835efb76c2d36b56220d9"
             },
             "require": {
                 "drupal/automatic_updates": "^3.1.7",
@@ -2827,15 +2819,11 @@
             },
             "default-branch": true,
             "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Applies the foundational Daisy UI CMS recipes.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/daisy_cms_starter/-/tree/1.0.x"
-            },
-            "time": "2025-03-28T00:27:29+00:00"
+            "time": "2025-03-28T11:26:02+00:00"
         },
         {
             "name": "drupal/dashboard",
@@ -3027,31 +3015,6 @@
             "time": "2025-03-18T15:59:45+00:00"
         },
         {
-            "name": "drupal/drupal_cms_analytics",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drupal_cms_analytics.git",
-                "reference": "5781380fd4919c8c85c720fc77c902e2a8cdd1b7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdrupal_cms_analytics/repository/archive.zip?sha=5781380fd4919c8c85c720fc77c902e2a8cdd1b7",
-                "reference": "5781380fd4919c8c85c720fc77c902e2a8cdd1b7",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/drupal_cms_google_analytics": "~1.1.0"
-            },
-            "type": "metapackage",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Adds recipes for tracking website traffic.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drupal_cms_analytics/-/tree/1.1.0"
-            },
-            "time": "2025-03-18T15:59:45+00:00"
-        },
-        {
             "name": "drupal/drupal_cms_anti_spam",
             "version": "1.1.0",
             "source": {
@@ -3155,67 +3118,6 @@
             "time": "2025-03-18T15:59:45+00:00"
         },
         {
-            "name": "drupal/drupal_cms_forms",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drupal_cms_forms.git",
-                "reference": "7ceff1fcdfdf297b8eda3be6ef2cce8b213e6238"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdrupal_cms_forms/repository/archive.zip?sha=7ceff1fcdfdf297b8eda3be6ef2cce8b213e6238",
-                "reference": "7ceff1fcdfdf297b8eda3be6ef2cce8b213e6238",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": ">=10.4",
-                "drupal/drupal_cms_anti_spam": "~1.1.0",
-                "drupal/drupal_cms_page": "~1.1.0",
-                "drupal/webform": "^6.3-beta1"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Adds a simple contact form, and tools for building forms.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drupal_cms_forms/-/tree/1.1.0"
-            },
-            "time": "2025-03-18T15:59:45+00:00"
-        },
-        {
-            "name": "drupal/drupal_cms_google_analytics",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drupal_cms_google_analytics.git",
-                "reference": "79fc352bf5b9fd3e1888418b45a0eb3f426370e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdrupal_cms_google_analytics/repository/archive.zip?sha=79fc352bf5b9fd3e1888418b45a0eb3f426370e2",
-                "reference": "79fc352bf5b9fd3e1888418b45a0eb3f426370e2",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": ">=10.4",
-                "drupal/drupal_cms_privacy_basic": "~1.1.0",
-                "drupal/google_tag": "^2.0.7"
-            },
-            "conflict": {
-                "drupal/project_browser": "<2-alpha7"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Adds tracking of website traffic using Google Analytics and Google Tag Manager. Requires a Google Tag Manager ID.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drupal_cms_google_analytics/-/tree/1.1.0"
-            },
-            "time": "2025-03-18T15:59:45+00:00"
-        },
-        {
             "name": "drupal/drupal_cms_image",
             "version": "1.1.0",
             "source": {
@@ -3244,50 +3146,6 @@
                 "source": "https://git.drupalcode.org/project/drupal_cms_image/-/tree/1.1.0"
             },
             "time": "2025-03-18T15:59:45+00:00"
-        },
-        {
-            "name": "drupal/drupal_cms_olivero",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drupal_cms_olivero.git",
-                "reference": "1.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/drupal_cms_olivero-1.1.0.zip",
-                "reference": "1.1.0",
-                "shasum": "d384013e13c9613757ec559e28af455a6fa6b242"
-            },
-            "require": {
-                "drupal/core": "^11"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "1.1.0",
-                    "datestamp": "1742579711",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "drupal cms bot",
-                    "homepage": "https://www.drupal.org/user/3833773"
-                }
-            ],
-            "description": "A variant of the Olivero front-end theme, optimized for Drupal CMS.",
-            "homepage": "https://www.drupal.org/project/drupal_cms_olivero",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drupal_cms_olivero"
-            }
         },
         {
             "name": "drupal/drupal_cms_page",
@@ -3450,93 +3308,6 @@
             "time": "2025-03-18T15:59:45+00:00"
         },
         {
-            "name": "drupal/drupal_cms_seo_tools",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drupal_cms_seo_tools.git",
-                "reference": "1842600f199e159e44042a981001c40c59a62642"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdrupal_cms_seo_tools/repository/archive.zip?sha=1842600f199e159e44042a981001c40c59a62642",
-                "reference": "1842600f199e159e44042a981001c40c59a62642",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/bpmn_io": "^2.0.6",
-                "drupal/core": ">=10.4",
-                "drupal/eca": "^2.1.4",
-                "drupal/field_group": "^3.6",
-                "drupal/focal_point": "^2.1",
-                "drupal/metatag": "^2",
-                "drupal/robotstxt": "^1.6",
-                "drupal/seo_checklist": "^5.2.1",
-                "drupal/simple_sitemap": "^4.2.2",
-                "drupal/sitemap": "^2",
-                "drupal/token_or": "^2.2",
-                "drupal/yoast_seo": "^2.1"
-            },
-            "suggest": {
-                "drupal/drupal_cms_accessibility_tools": "Adds automated checks to help ensure content conforms to web accessibility guidelines.",
-                "drupal/drupal_cms_analytics": "Adds recipes for tracking website traffic."
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Adds common search engine optimisation tools such as meta tags, XML sitemap, robots.txt management and more.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drupal_cms_seo_tools/-/tree/1.1.0"
-            },
-            "time": "2025-03-18T15:59:45+00:00"
-        },
-        {
-            "name": "drupal/drupal_cms_starter",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/drupal_cms_starter.git",
-                "reference": "48fc0ffbf4c79c0b8990c90a72cb5986f6d2c8e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fdrupal_cms_starter/repository/archive.zip?sha=48fc0ffbf4c79c0b8990c90a72cb5986f6d2c8e2",
-                "reference": "48fc0ffbf4c79c0b8990c90a72cb5986f6d2c8e2",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/automatic_updates": "^3.1.7",
-                "drupal/bpmn_io": "^2.0.6",
-                "drupal/core": ">=10.4",
-                "drupal/dashboard": "^2",
-                "drupal/drupal_cms_admin_ui": "~1.1.0",
-                "drupal/drupal_cms_anti_spam": "~1.1.0",
-                "drupal/drupal_cms_authentication": "~1.1.0",
-                "drupal/drupal_cms_olivero": "~1.1.0",
-                "drupal/drupal_cms_page": "~1.1.0",
-                "drupal/drupal_cms_privacy_basic": "~1.1.0",
-                "drupal/drupal_cms_remote_video": "~1.1.0",
-                "drupal/drupal_cms_search": "~1.1.0",
-                "drupal/drupal_cms_seo_basic": "~1.1.0",
-                "drupal/easy_email_express": "^1.0.2",
-                "drupal/eca": "^2.1.4",
-                "drupal/project_browser": "^2-beta1",
-                "drupal/token": "^1"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Applies the foundational Drupal CMS recipes.",
-            "support": {
-                "source": "https://git.drupalcode.org/project/drupal_cms_starter/-/tree/1.1.0"
-            },
-            "time": "2025-03-18T15:59:45+00:00"
-        },
-        {
             "name": "drupal/easy_breadcrumb",
             "version": "2.0.9",
             "source": {
@@ -3632,195 +3403,27 @@
             }
         },
         {
-            "name": "drupal/easy_email",
-            "version": "3.0.4",
+            "name": "drupal/easy_responsive_images",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email.git",
-                "reference": "3.0.4"
+                "url": "https://git.drupalcode.org/project/easy_responsive_images.git",
+                "reference": "1.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/easy_email-3.0.4.zip",
-                "reference": "3.0.4",
-                "shasum": "1b42bd118538f5f1a45fe5d8fef68494ab45d4c6"
+                "url": "https://ftp.drupal.org/files/projects/easy_responsive_images-1.4.0.zip",
+                "reference": "1.4.0",
+                "shasum": "a191f55a7158da99b941920ac8119f3fd28b5240"
             },
             "require": {
-                "drupal/core": "^10.1 || ^11",
-                "drupal/jquery_ui_resizable": "^2.0",
-                "drupal/token": "^1.0"
-            },
-            "require-dev": {
-                "drupal/commerce": "^2.0",
-                "drupal/commerce_order": "*",
-                "drupal/commerce_price": "*",
-                "drupal/mailsystem": "^4.0",
-                "drupal/symfony_mailer_lite": "^1.0"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.4",
-                    "datestamp": "1735316199",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "mandclu",
-                    "homepage": "https://www.drupal.org/user/52136"
-                },
-                {
-                    "name": "zengenuity",
-                    "homepage": "https://www.drupal.org/user/326925"
-                }
-            ],
-            "description": "Easy Email is an HTML email system for Drupal, designed to be as simple as possible to configure, with a robust set of features.",
-            "homepage": "https://www.drupal.org/project/easy_email",
-            "support": {
-                "source": "https://git.drupalcode.org/project/easy_email"
-            }
-        },
-        {
-            "name": "drupal/easy_email_express",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email_express.git",
-                "reference": "324e63083b41dbeab29bf8c480da1b081d864092"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Feasy_email_express/repository/archive.zip?sha=324e63083b41dbeab29bf8c480da1b081d864092",
-                "reference": "324e63083b41dbeab29bf8c480da1b081d864092",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^10.3 || ^11",
-                "drupal/easy_email_standard": "^1.0.2",
-                "drupal/easy_email_types_core": "^1.0.3",
-                "drupal/easy_email_types_default": "^1.0.1"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Easy Email configuration that replaces all core emails with HTML formatted emails.",
-            "homepage": "https://www.drupal.org/project/easy_email_express",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "issues": "https://www.drupal.org/project/issues/easy_email_express",
-                "source": "https://git.drupalcode.org/project/easy_email_express"
-            },
-            "time": "2024-11-22T14:22:03+00:00"
-        },
-        {
-            "name": "drupal/easy_email_standard",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email_standard.git",
-                "reference": "80cfbcfdc5d9a84d17a81502aa7189bc011f07c0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Feasy_email_standard/repository/archive.zip?sha=80cfbcfdc5d9a84d17a81502aa7189bc011f07c0",
-                "reference": "80cfbcfdc5d9a84d17a81502aa7189bc011f07c0",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^10.3 || ^11",
-                "drupal/easy_email": "^3.0.2",
-                "drupal/easy_email_theme": "^1",
-                "drupal/mailsystem": "^4",
-                "drupal/symfony_mailer_lite": "^2.0.1"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Easy Email module and theme for sending HTML emails from Drupal.",
-            "homepage": "https://www.drupal.org/project/easy_email_standard",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "issues": "https://www.drupal.org/project/issues/easy_email_standard",
-                "source": "https://git.drupalcode.org/project/easy_email_standard"
-            },
-            "time": "2024-11-20T17:14:09+00:00"
-        },
-        {
-            "name": "drupal/easy_email_text_format",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email_text_format.git",
-                "reference": "43798ff5924bdeb07ef30531faa2ab8271a3169f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Feasy_email_text_format/repository/archive.zip?sha=43798ff5924bdeb07ef30531faa2ab8271a3169f",
-                "reference": "43798ff5924bdeb07ef30531faa2ab8271a3169f",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^10.3 || ^11"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Text format and editor config for editing HTML body of Easy Email templates.",
-            "homepage": "https://www.drupal.org/project/easy_email_text_format",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "issues": "https://www.drupal.org/project/issues/easy_email_text_format",
-                "source": "https://git.drupalcode.org/project/easy_email_text_format"
-            },
-            "time": "2024-11-20T16:00:31+00:00"
-        },
-        {
-            "name": "drupal/easy_email_theme",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email_theme.git",
-                "reference": "1.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/easy_email_theme-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "daaca22af0a2ba337c847be3ad6d6f18eb21f3fa"
-            },
-            "require": {
-                "drupal/core": "^10.2 || ^11"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1729101397",
+                    "version": "1.4.0",
+                    "datestamp": "1724059793",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3833,85 +3436,15 @@
             ],
             "authors": [
                 {
-                    "name": "zengenuity",
-                    "homepage": "https://www.drupal.org/user/326925"
+                    "name": "seanb",
+                    "homepage": "https://www.drupal.org/user/545912"
                 }
             ],
-            "description": "A theme for sending HTML emails",
-            "homepage": "https://www.drupal.org/project/easy_email_theme",
+            "description": "Provides a settings form to automatically generate image styles, and a Twig Filter to use the image styles in templates.",
+            "homepage": "https://www.drupal.org/project/easy_responsive_images",
             "support": {
-                "source": "https://git.drupalcode.org/project/easy_email_theme"
+                "source": "https://git.drupalcode.org/project/easy_responsive_images"
             }
-        },
-        {
-            "name": "drupal/easy_email_types_core",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email_types_core.git",
-                "reference": "fcbf5253f35f16e94dc92e6fd6b35e6f620effe5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Feasy_email_types_core/repository/archive.zip?sha=fcbf5253f35f16e94dc92e6fd6b35e6f620effe5",
-                "reference": "fcbf5253f35f16e94dc92e6fd6b35e6f620effe5",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^10.3 || ^11",
-                "drupal/easy_email": "^3.0.2",
-                "drupal/easy_email_text_format": "^1"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Easy Email templates that replicate and override the content of emails sent by Drupal core with HTML-formatted versions.",
-            "homepage": "https://www.drupal.org/project/easy_email_types_core",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "issues": "https://www.drupal.org/project/issues/easy_email_types_core",
-                "source": "https://git.drupalcode.org/project/easy_email_types_core"
-            },
-            "time": "2024-11-22T14:11:05+00:00"
-        },
-        {
-            "name": "drupal/easy_email_types_default",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/easy_email_types_default.git",
-                "reference": "edad52fa8dd7d14b7dbd01e5da250b9d79f20246"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Feasy_email_types_default/repository/archive.zip?sha=edad52fa8dd7d14b7dbd01e5da250b9d79f20246",
-                "reference": "edad52fa8dd7d14b7dbd01e5da250b9d79f20246",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/core": "^10.3 || ^11",
-                "drupal/easy_email": "^3.0.2",
-                "drupal/easy_email_text_format": "^1.0.2"
-            },
-            "type": "drupal-recipe",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "A default Easy Email template configured to override all emails sent from the site.",
-            "homepage": "https://www.drupal.org/project/easy_email_types_default",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "issues": "https://www.drupal.org/project/issues/easy_email_types_default",
-                "source": "https://git.drupalcode.org/project/easy_email_types_default"
-            },
-            "time": "2024-11-22T14:16:50+00:00"
         },
         {
             "name": "drupal/eca",
@@ -4532,78 +4065,6 @@
             ]
         },
         {
-            "name": "drupal/google_tag",
-            "version": "2.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/google_tag.git",
-                "reference": "2.0.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_tag-2.0.8.zip",
-                "reference": "2.0.8",
-                "shasum": "af12c74ec367c1c1319ea710f8fb6feefb100a6e"
-            },
-            "require": {
-                "drupal/core": "^9.5 || ^10 || ^11"
-            },
-            "require-dev": {
-                "drupal/commerce": "^2.0 || ^3.0",
-                "drupal/commerce_wishlist": "^3.0@beta",
-                "drupal/csp": "^1.0 || ~2.1.1",
-                "drupal/google_analytics": "^4.0",
-                "drupal/search_api": "^1.28.0",
-                "drupal/token": "^1.11.0",
-                "drupal/webform": "^6.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.8",
-                    "datestamp": "1738172706",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-main": "2.x-dev"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "acquia",
-                    "homepage": "https://www.drupal.org/user/1231722"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "kaynen",
-                    "homepage": "https://www.drupal.org/user/733308"
-                },
-                {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
-                },
-                {
-                    "name": "solotandem",
-                    "homepage": "https://www.drupal.org/user/240748"
-                }
-            ],
-            "description": "Provides support for Google Tag and Google Tag Manager in Drupal.",
-            "homepage": "https://www.drupal.org/project/google_tag",
-            "support": {
-                "source": "https://git.drupalcode.org/project/google_tag"
-            }
-        },
-        {
             "name": "drupal/honeypot",
             "version": "2.2.2",
             "source": {
@@ -4671,163 +4132,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/honeypot",
                 "issues": "https://www.drupal.org/project/issues/honeypot"
-            }
-        },
-        {
-            "name": "drupal/jquery_ui",
-            "version": "1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/jquery_ui.git",
-                "reference": "8.x-1.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jquery_ui-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "3f893843ec30fed18fa1b0cb326e51880b0cb686"
-            },
-            "require": {
-                "drupal/core": "^9.2 || ^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1717002098",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bnjmnm",
-                    "homepage": "https://www.drupal.org/user/2369194"
-                },
-                {
-                    "name": "jjeff",
-                    "homepage": "https://www.drupal.org/user/17190"
-                },
-                {
-                    "name": "lauriii",
-                    "homepage": "https://www.drupal.org/user/1078742"
-                },
-                {
-                    "name": "litwol",
-                    "homepage": "https://www.drupal.org/user/78134"
-                },
-                {
-                    "name": "mfb",
-                    "homepage": "https://www.drupal.org/user/12302"
-                },
-                {
-                    "name": "mfer",
-                    "homepage": "https://www.drupal.org/user/25701"
-                },
-                {
-                    "name": "mikelutz",
-                    "homepage": "https://www.drupal.org/user/2972409"
-                },
-                {
-                    "name": "nod_",
-                    "homepage": "https://www.drupal.org/user/598310"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
-                },
-                {
-                    "name": "RobLoach",
-                    "homepage": "https://www.drupal.org/user/61114"
-                },
-                {
-                    "name": "sun",
-                    "homepage": "https://www.drupal.org/user/54136"
-                },
-                {
-                    "name": "webchick",
-                    "homepage": "https://www.drupal.org/user/24967"
-                },
-                {
-                    "name": "Wim Leers",
-                    "homepage": "https://www.drupal.org/user/99777"
-                },
-                {
-                    "name": "zrpnr",
-                    "homepage": "https://www.drupal.org/user/1448368"
-                }
-            ],
-            "description": "Provides jQuery UI library.",
-            "homepage": "https://www.drupal.org/project/jquery_ui",
-            "support": {
-                "source": "https://git.drupalcode.org/project/jquery_ui"
-            }
-        },
-        {
-            "name": "drupal/jquery_ui_resizable",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/jquery_ui_resizable.git",
-                "reference": "2.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jquery_ui_resizable-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "f1f15c5fe01f11e5348d502e2df836d0c492f507"
-            },
-            "require": {
-                "drupal/core": "^9.2 || ^10 || ^11",
-                "drupal/jquery_ui": "^1.7"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1717031358",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bnjmnm",
-                    "homepage": "https://www.drupal.org/user/2369194"
-                },
-                {
-                    "name": "lauriii",
-                    "homepage": "https://www.drupal.org/user/1078742"
-                },
-                {
-                    "name": "nod_",
-                    "homepage": "https://www.drupal.org/user/598310"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
-                },
-                {
-                    "name": "zrpnr",
-                    "homepage": "https://www.drupal.org/user/1448368"
-                }
-            ],
-            "description": "Provides jQuery UI Resizable library.",
-            "homepage": "https://www.drupal.org/project/jquery_ui_resizable",
-            "support": {
-                "source": "https://git.drupalcode.org/project/jquery_ui_resizable"
             }
         },
         {
@@ -5270,86 +4574,6 @@
             }
         },
         {
-            "name": "drupal/mailsystem",
-            "version": "4.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/mailsystem.git",
-                "reference": "8.x-4.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/mailsystem-8.x-4.5.zip",
-                "reference": "8.x-4.5",
-                "shasum": "e52a814a87b343ab69f8d8ef462a9873c1d01158"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10.1 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-4.5",
-                    "datestamp": "1723379369",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "emartoni",
-                    "homepage": "https://www.drupal.org/user/3225331"
-                },
-                {
-                    "name": "joseph.olstad",
-                    "homepage": "https://www.drupal.org/user/1321830"
-                },
-                {
-                    "name": "les lim",
-                    "homepage": "https://www.drupal.org/user/84263"
-                },
-                {
-                    "name": "manuel garcia",
-                    "homepage": "https://www.drupal.org/user/213194"
-                },
-                {
-                    "name": "miro_dietiker",
-                    "homepage": "https://www.drupal.org/user/227761"
-                },
-                {
-                    "name": "Nafes",
-                    "homepage": "https://www.drupal.org/user/2489926"
-                },
-                {
-                    "name": "pillarsdotnet",
-                    "homepage": "https://www.drupal.org/user/36148"
-                },
-                {
-                    "name": "renatog",
-                    "homepage": "https://www.drupal.org/user/3326031"
-                },
-                {
-                    "name": "tr",
-                    "homepage": "https://www.drupal.org/user/202830"
-                }
-            ],
-            "description": "Mail System",
-            "homepage": "https://www.drupal.org/project/mailsystem",
-            "support": {
-                "source": "https://git.drupalcode.org/project/mailsystem"
-            }
-        },
-        {
             "name": "drupal/menu_link_attributes",
             "version": "1.5.0",
             "source": {
@@ -5407,77 +4631,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/menu_link_attributes",
                 "issues": "http://drupal.org/project/issues/menu_link_attributes"
-            }
-        },
-        {
-            "name": "drupal/metatag",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "2.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "c28fe2fdac68a9370a6af6cbafff4425dd5148f3"
-            },
-            "require": {
-                "drupal/core": "^9.4 || ^10 || ^11",
-                "drupal/token": "^1.0",
-                "php": ">=8.0"
-            },
-            "require-dev": {
-                "drupal/forum": "*",
-                "drupal/hal": "^1 || ^2 || ^9",
-                "drupal/metatag_dc": "*",
-                "drupal/metatag_open_graph": "*",
-                "drupal/page_manager": "^4.0",
-                "drupal/redirect": "^1.0",
-                "ergebnis/composer-normalize": "*",
-                "mpyw/phpunit-patch-serializable-comparison": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1731004042",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "composer-normalize": {
-                    "indent-size": 2,
-                    "indent-style": "space"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/640498/committers",
-                    "role": "Developer"
-                },
-                {
-                    "name": "dave reid",
-                    "homepage": "https://www.drupal.org/user/53892"
-                }
-            ],
-            "description": "Manage meta tags for all entities.",
-            "homepage": "https://www.drupal.org/project/metatag",
-            "keywords": [
-                "Drupal",
-                "seo"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/metatag",
-                "issues": "https://www.drupal.org/project/issues/metatag",
-                "docs": "https://www.drupal.org/docs/8/modules/metatag"
             }
         },
         {
@@ -5731,71 +4884,6 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
-            }
-        },
-        {
-            "name": "drupal/robotstxt",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/robotstxt.git",
-                "reference": "8.x-1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/robotstxt-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "157192b2c6b2cc9779336cb3a5e752ffa2409c6b"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1723570930",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "hass",
-                    "homepage": "https://www.drupal.org/u/hass"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/53579/committers"
-                },
-                {
-                    "name": "generalredneck",
-                    "homepage": "https://www.drupal.org/user/368854"
-                },
-                {
-                    "name": "kevinquillen",
-                    "homepage": "https://www.drupal.org/user/317279"
-                },
-                {
-                    "name": "mikeegoulding",
-                    "homepage": "https://www.drupal.org/user/2867877"
-                },
-                {
-                    "name": "Todd Nienkerk",
-                    "homepage": "https://www.drupal.org/user/92096"
-                }
-            ],
-            "description": "Generates the robots.txt file dynamically and gives you the chance to edit it, on a per-site basis, from the web UI.",
-            "homepage": "https://www.drupal.org/project/robotstxt",
-            "support": {
-                "source": "https://git.drupal.org/project/robotstxt.git",
-                "issues": "https://www.drupal.org/project/issues/robotstxt"
             }
         },
         {
@@ -6238,87 +5326,6 @@
             }
         },
         {
-            "name": "drupal/seo_checklist",
-            "version": "5.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/seo_checklist.git",
-                "reference": "5.2.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/seo_checklist-5.2.4.zip",
-                "reference": "5.2.4",
-                "shasum": "d50daa43114354755adbe449f9a948c9ce16cfae"
-            },
-            "require": {
-                "drupal/checklistapi": "^2.0",
-                "drupal/core": "^8.8 || ^9 || ^10 || ^11"
-            },
-            "require-dev": {
-                "drupal/addtoany": "*",
-                "drupal/admin_toolbar": "*",
-                "drupal/advagg": "*",
-                "drupal/cloudflare": "*",
-                "drupal/coffee": "*",
-                "drupal/diff": "*",
-                "drupal/easy_breadcrumb": "*",
-                "drupal/editor_advanced_link": "*",
-                "drupal/filefield_paths": "*",
-                "drupal/google_tag": "*",
-                "drupal/honeypot": "*",
-                "drupal/hreflang": "*",
-                "drupal/metatag": "*",
-                "drupal/pathauto": "*",
-                "drupal/redirect": "*",
-                "drupal/robotstxt": "*",
-                "drupal/scheduler": "*",
-                "drupal/search404": "*",
-                "drupal/security_review": "*",
-                "drupal/sitemap": "*",
-                "drupal/xmlsitemap": "*",
-                "drupal/yoast_seo": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "5.2.4",
-                    "datestamp": "1736549430",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "ben finklea",
-                    "homepage": "https://www.drupal.org/user/46676"
-                },
-                {
-                    "name": "thejimbirch",
-                    "homepage": "https://www.drupal.org/user/2507260"
-                },
-                {
-                    "name": "traviscarden",
-                    "homepage": "https://www.drupal.org/user/236758"
-                }
-            ],
-            "description": "Uses best practices to check for proper search engine optimization.",
-            "homepage": "https://www.drupal.org/project/seo_checklist",
-            "keywords": [
-                "SEO"
-            ],
-            "support": {
-                "source": "http://drupalcode.org/seo_checklist",
-                "issues": "https://www.drupal.org/project/issues/seo_checklist"
-            }
-        },
-        {
             "name": "drupal/simple_search_form",
             "version": "1.6.0",
             "source": {
@@ -6364,136 +5371,6 @@
             "homepage": "https://www.drupal.org/project/simple_search_form",
             "support": {
                 "source": "https://git.drupalcode.org/project/simple_search_form"
-            }
-        },
-        {
-            "name": "drupal/simple_sitemap",
-            "version": "4.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "4.2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-4.2.2.zip",
-                "reference": "4.2.2",
-                "shasum": "1f9c9197d37450fb347a4fa3f10191f5f4b5ef13"
-            },
-            "require": {
-                "drupal/core": "^10.2 || ^11",
-                "ext-xmlwriter": "*"
-            },
-            "conflict": {
-                "drush/drush": "<12.5.1"
-            },
-            "require-dev": {
-                "drupal/paragraphs": "^1.18"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.2.2",
-                    "datestamp": "1732485885",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Pawel Ginalski (gbyte)",
-                    "homepage": "https://www.drupal.org/u/gbyte",
-                    "email": "contact@gbyte.dev",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "walkingdexter",
-                    "homepage": "https://www.drupal.org/user/3251330"
-                }
-            ],
-            "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
-            "homepage": "https://drupal.org/project/simple_sitemap",
-            "support": {
-                "source": "https://cgit.drupalcode.org/simple_sitemap",
-                "issues": "https://drupal.org/project/issues/simple_sitemap"
-            }
-        },
-        {
-            "name": "drupal/sitemap",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/sitemap.git",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sitemap-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "1e1db0da34ff07318cd2179b392d6495da49a0f4"
-            },
-            "require": {
-                "drupal/core": "^10.2 || ^11"
-            },
-            "require-dev": {
-                "drupal/book": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1724850275",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Nik Alexandrov",
-                    "homepage": "https://www.drupal.org/u/nafes",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Anna Kalata",
-                    "homepage": "https://www.drupal.org/u/akalata",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "killes@www.drop.org",
-                    "homepage": "https://www.drupal.org/u/killeswww.drop.org",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/3295/committers",
-                    "role": "contributor"
-                },
-                {
-                    "name": "Nafes",
-                    "homepage": "https://www.drupal.org/user/2489926"
-                },
-                {
-                    "name": "ridefree",
-                    "homepage": "https://www.drupal.org/user/49148"
-                }
-            ],
-            "description": "Display a sitemap.",
-            "homepage": "http://drupal.org/project/sitemap",
-            "support": {
-                "source": "http://cgit.drupalcode.org/sitemap",
-                "issues": "http://drupal.org/project/issues/sitemap"
             }
         },
         {
@@ -6557,54 +5434,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/svg_image",
                 "issues": "https://www.drupal.org/project/issues/svg_image"
-            }
-        },
-        {
-            "name": "drupal/symfony_mailer_lite",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/symfony_mailer_lite.git",
-                "reference": "2.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/symfony_mailer_lite-2.0.2.zip",
-                "reference": "2.0.2",
-                "shasum": "912b2ca91b4cbdd3164676b27a5cfdb157e8240f"
-            },
-            "require": {
-                "drupal/core": "^10.1 || ^11",
-                "drupal/mailsystem": "^4.4",
-                "html2text/html2text": "^4.0.1",
-                "symfony/mailer": "^6.4 || ^7.1",
-                "tijsverkoyen/css-to-inline-styles": "^2.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.2",
-                    "datestamp": "1732721047",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "zengenuity",
-                    "homepage": "https://www.drupal.org/user/326925"
-                }
-            ],
-            "description": "Drupal Symfony Mailer Lite",
-            "homepage": "https://www.drupal.org/project/symfony_mailer_lite",
-            "support": {
-                "source": "https://git.drupalcode.org/project/symfony_mailer_lite"
             }
         },
         {
@@ -6730,62 +5559,6 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
-            }
-        },
-        {
-            "name": "drupal/token_or",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/token_or.git",
-                "reference": "2.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token_or-2.3.0.zip",
-                "reference": "2.3.0",
-                "shasum": "d639704943132269c0a9bfec0022717deb17b083"
-            },
-            "require": {
-                "drupal/core": "^9.2 || ^10 || ^11",
-                "drupal/token": "^1.0"
-            },
-            "require-dev": {
-                "drupal/webform": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.3.0",
-                    "datestamp": "1730828436",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "danielbeeke",
-                    "homepage": "https://www.drupal.org/user/2484978"
-                },
-                {
-                    "name": "jeroent",
-                    "homepage": "https://www.drupal.org/user/2228934"
-                },
-                {
-                    "name": "pianomansam",
-                    "homepage": "https://www.drupal.org/user/407020"
-                }
-            ],
-            "description": "Provides an 'or-able' token.",
-            "homepage": "https://www.drupal.org/project/token_or",
-            "support": {
-                "source": "https://git.drupalcode.org/project/token_or"
             }
         },
         {
@@ -7441,88 +6214,6 @@
             }
         },
         {
-            "name": "drupal/yoast_seo",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/yoast_seo.git",
-                "reference": "8.x-2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/yoast_seo-8.x-2.1.zip",
-                "reference": "8.x-2.1",
-                "shasum": "f80745ea28937ee6e31a77ae9396cff62bb251ca"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11",
-                "drupal/metatag": "^1.3 || ^2.0",
-                "goalgorilla/rtseo.js": "^2.0"
-            },
-            "conflict": {
-                "drupal/commerce": ">2.0 <2.5"
-            },
-            "require-dev": {
-                "composer/installers": "^2",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-                "dmore/behat-chrome-extension": "^1.4",
-                "drupal/devel": "^5.0.2",
-                "drupal/drupal-extension": "^5",
-                "drupal/paragraphs": "^1.15",
-                "drush/drush": "^11.0",
-                "friends-of-behat/mink-debug-extension": "^2.1",
-                "mglaman/phpstan-drupal": "^1.1.25",
-                "phpspec/prophecy-phpunit": "v2.0.1",
-                "phpstan/extension-installer": "^1.1.0",
-                "phpstan/phpstan": "^1.9.2",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.1.1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.1",
-                    "datestamp": "1736565427",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bramtenhove",
-                    "homepage": "https://www.drupal.org/user/1549848"
-                },
-                {
-                    "name": "kingdutch",
-                    "homepage": "https://www.drupal.org/user/1868952"
-                },
-                {
-                    "name": "Open Social",
-                    "homepage": "https://www.drupal.org/user/272162"
-                },
-                {
-                    "name": "robertragas",
-                    "homepage": "https://www.drupal.org/user/2723261"
-                },
-                {
-                    "name": "ronaldtebrake",
-                    "homepage": "https://www.drupal.org/user/2314038"
-                }
-            ],
-            "description": "Adds Real-time SEO page analysis and configuration.",
-            "homepage": "http://drupal.org/project/yoast_seo",
-            "support": {
-                "source": "http://cgit.drupalcode.org/yoast_seo",
-                "issues": "http://drupal.org/project/yoast_seo"
-            }
-        },
-        {
             "name": "drush/drush",
             "version": "13.4.0",
             "source": {
@@ -7781,32 +6472,6 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.21.0"
             },
             "time": "2025-01-13T09:32:25+00:00"
-        },
-        {
-            "name": "goalgorilla/rtseo.js",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/goalgorilla/RTSEO.js.git",
-                "reference": "ab5f9c3ff478e0e9d61f5cc3831038e4f22bbbb0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/RTSEO.js/zipball/ab5f9c3ff478e0e9d61f5cc3831038e4f22bbbb0",
-                "reference": "ab5f9c3ff478e0e9d61f5cc3831038e4f22bbbb0",
-                "shasum": ""
-            },
-            "type": "drupal-library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "description": "Text analysis application for use with the Real-Time SEO Drupal module.",
-            "homepage": "https://github.com/goalgorilla/RTSEO.js",
-            "support": {
-                "source": "https://github.com/goalgorilla/RTSEO.js/tree/2.1.0"
-            },
-            "time": "2018-01-19T23:11:36+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -8240,44 +6905,6 @@
                 }
             ],
             "time": "2025-03-27T12:30:47+00:00"
-        },
-        {
-            "name": "html2text/html2text",
-            "version": "4.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mtibben/html2text.git",
-                "reference": "3b443cbe302b52eb5806a21a9dbd79524203970a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mtibben/html2text/zipball/3b443cbe302b52eb5806a21a9dbd79524203970a",
-                "reference": "3b443cbe302b52eb5806a21a9dbd79524203970a",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4|^9.0"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance",
-                "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Html2Text\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Converts HTML to formatted plain text",
-            "support": {
-                "issues": "https://github.com/mtibben/html2text/issues",
-                "source": "https://github.com/mtibben/html2text/tree/4.3.2"
-            },
-            "time": "2024-08-20T02:43:29+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -11094,16 +9721,16 @@
         },
         {
             "name": "slevomat/coding-standard",
-            "version": "8.16.1",
+            "version": "8.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "490023f23813483b5f75381c4ee07d26d9edced1"
+                "reference": "8bf0408a9cf30687d87957d364de9a3d5d00d948"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/490023f23813483b5f75381c4ee07d26d9edced1",
-                "reference": "490023f23813483b5f75381c4ee07d26d9edced1",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/8bf0408a9cf30687d87957d364de9a3d5d00d948",
+                "reference": "8bf0408a9cf30687d87957d364de9a3d5d00d948",
                 "shasum": ""
             },
             "require": {
@@ -11115,11 +9742,11 @@
             "require-dev": {
                 "phing/phing": "3.0.1",
                 "php-parallel-lint/php-parallel-lint": "1.4.0",
-                "phpstan/phpstan": "2.1.6",
+                "phpstan/phpstan": "2.1.11",
                 "phpstan/phpstan-deprecation-rules": "2.0.1",
-                "phpstan/phpstan-phpunit": "2.0.4",
-                "phpstan/phpstan-strict-rules": "2.0.3",
-                "phpunit/phpunit": "9.6.8|10.5.45|11.4.4|11.5.9|12.0.4"
+                "phpstan/phpstan-phpunit": "2.0.6",
+                "phpstan/phpstan-strict-rules": "2.0.4",
+                "phpunit/phpunit": "9.6.8|10.5.45|11.4.4|11.5.15|12.0.10"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
@@ -11143,7 +9770,7 @@
             ],
             "support": {
                 "issues": "https://github.com/slevomat/coding-standard/issues",
-                "source": "https://github.com/slevomat/coding-standard/tree/8.16.1"
+                "source": "https://github.com/slevomat/coding-standard/tree/8.16.2"
             },
             "funding": [
                 {
@@ -11155,7 +9782,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-23T16:33:42+00:00"
+            "time": "2025-03-27T19:37:58+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -11407,71 +10034,6 @@
                 }
             ],
             "time": "2024-12-11T03:49:26+00:00"
-        },
-        {
-            "name": "symfony/css-selector",
-            "version": "v7.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "601a5ce9aaad7bf10797e3663faefce9e26c24e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/601a5ce9aaad7bf10797e3663faefce9e26c24e2",
-                "reference": "601a5ce9aaad7bf10797e3663faefce9e26c24e2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\CssSelector\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Jean-François Simon",
-                    "email": "jeanfrancois.simon@sensiolabs.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Converts CSS selectors to XPath expressions",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v7.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-09-25T14:21:43+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -14045,61 +12607,6 @@
             "time": "2025-01-07T12:55:42+00:00"
         },
         {
-            "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "v2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "0d72ac1c00084279c1816675284073c5a337c20d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/0d72ac1c00084279c1816675284073c5a337c20d",
-                "reference": "0d72ac1c00084279c1816675284073c5a337c20d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "php": "^7.4 || ^8.0",
-                "symfony/css-selector": "^5.4 || ^6.0 || ^7.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^2.0",
-                "phpstan/phpstan-phpunit": "^2.0",
-                "phpunit/phpunit": "^8.5.21 || ^9.5.10"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TijsVerkoyen\\CssToInlineStyles\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tijs Verkoyen",
-                    "email": "css_to_inline_styles@verkoyen.eu",
-                    "role": "Developer"
-                }
-            ],
-            "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
-            "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
-            "support": {
-                "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
-                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
-            },
-            "time": "2024-12-21T16:25:41+00:00"
-        },
-        {
             "name": "twig/twig",
             "version": "v3.19.0",
             "source": {
@@ -14419,7 +12926,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/daisy_cms_content_type_base": 20,
+        "drupal/daisy_cms_image": 20,
         "drupal/daisy_cms_layout_builder": 20,
+        "drupal/daisy_cms_remote_video": 20,
         "drupal/daisy_cms_starter": 20,
         "drupal/field_group": 20,
         "drupal/gin_lb": 20,
